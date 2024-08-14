@@ -1,0 +1,217 @@
+/* Resetting default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #EEF5FF;
+    overflow-x: hidden;
+}
+
+/* Header Styles */
+header {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.header-overlay {
+    position: relative;
+    height: 100%;
+}
+
+header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #200E3A;
+
+}
+
+.text-overlay h1 {
+    font-size: 4em;
+    margin-bottom: 0.5em;
+    animation: fadeInText 2s ease-in-out forwards;
+}
+
+.text-overlay p {
+    font-size: 1.5em;
+    animation: fadeInText 2s ease-in-out forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeInText {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #006064;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0.5em 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #e0f7fa;
+}
+
+/* Section Styles */
+section {
+    padding: 2em 10%;
+    text-align: center;
+}
+section p{
+    font-size: 1.3em;
+    font-family: Serif;
+    color: #2C3333;
+}
+section h2 {
+
+    margin-bottom: 2em;
+    color: #006064;
+}
+
+/* Horizontal Gallery Styles */
+.horizontal-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    overflow: hidden;
+}
+.image-container {
+    text-align: center;
+}
+
+.image-container img {
+    width: 300px; /* Set the width */
+    height: 200px; /* Set the height */
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.image-container p {
+    margin-top: 0.5em;
+    font-size: 1em;
+    color: #555;
+}
+.horizontal-gallery img {
+    width: 300px; /* Set the width */
+    height: 200px; /* Set the height */
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.horizontal-gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Card Container Styles */
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5em;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin: 0.5em 0;
+    color: #00796b;
+}
+
+.card p {
+    padding: 0 1em;
+    color: #555;
+}
+
+.card a {
+    display: block;
+    margin: 1em;
+    padding: 0.5em 0;
+    background-color: #00796b;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.card a:hover {
+    background-color: #004d40;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #006064;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 2em;
+}
+
+/* Fade-in Animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s forwards;
+    animation-delay: 0.3s;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
